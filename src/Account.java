@@ -7,4 +7,8 @@ public class Account {
 		this.id =id;
 		balance = 0;
 	}
+	public void deposit(double amount)
+	{
+		
+	}
 }
