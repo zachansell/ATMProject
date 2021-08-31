@@ -11,4 +11,12 @@ public class Account {
 	{
 		balance +=amount;
 	}
+	public String getid()
+	{
+		return id;
+	}
+	public boolean equals(Account other)
+	{
+		return id.equals(other.getid());
+	}
 }
