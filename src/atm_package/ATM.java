@@ -21,6 +21,21 @@ public class ATM {
 		
 		
 	}
+	
+	
+	public double withdraw (String account, double amount)
+	{
+		if(accounts.isEmpty() || zachAnsellCodeFixerHelperPleaseHelpIHaveSpentTooLongTryingToFixThis (account) == -1) 
+		{
+			throw new NullPointerException(); 
+		}
+		else
+		{
+			return(accounts.get(zachAnsellCodeFixerHelperPleaseHelpIHaveSpentTooLongTryingToFixThis( account)).withdraw(amount));
+		}
+	}
+	
+	
 	private int zachAnsellCodeFixerHelperPleaseHelpIHaveSpentTooLongTryingToFixThis (String account)
 	{
 		int counter = 0; 
@@ -33,5 +48,16 @@ public class ATM {
 			counter++; 
 		}
 		return -1; 
+	}
+	public double checkBalance (String account)
+	{
+		if(accounts.isEmpty() || zachAnsellCodeFixerHelperPleaseHelpIHaveSpentTooLongTryingToFixThis (account) == -1) 
+		{
+			throw new NullPointerException(); 
+		}
+		else
+		{
+			return(accounts.get(zachAnsellCodeFixerHelperPleaseHelpIHaveSpentTooLongTryingToFixThis(account)).getBalance());
+		}
 	}
 }
