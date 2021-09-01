@@ -19,4 +19,8 @@ public class Account {
 	{
 		return id.equals(other.getid());
 	}
+	public double getBalance ()
+	{
+		return balance; 
+	}
 }
