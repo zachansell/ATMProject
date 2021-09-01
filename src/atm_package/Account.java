@@ -1,3 +1,4 @@
+package atm_package;
 
 public class Account {
 	private String id;
@@ -7,9 +8,10 @@ public class Account {
 		this.id =id;
 		balance = 0;
 	}
-	public void deposit(double amount)
+	public double deposit(double amount)
 	{
 		balance +=amount;
+		return getBalance(); 
 	}
 	public String getid()
 	{
